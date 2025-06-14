@@ -1,10 +1,17 @@
-HELP.md
+# Java build files
 target/
+build/
+
+# Maven
 .mvn/wrapper/maven-wrapper.jar
+
+# Allow target/build folders inside specific paths (e.g., unit tests or modules)
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# Spring Tool Suite (STS)
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +20,39 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# macOS Finder
+.DS_Store
+
+# Node modules (client side React project)
+node_modules/
+
+# Log files
+*.log
+
+# Environment files (Sensitive credentials or secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker-related files
+**/docker-compose.override.yml
+**/Dockerfile.*
+**/.dockerignore

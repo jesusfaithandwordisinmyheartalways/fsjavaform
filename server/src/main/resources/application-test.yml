@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/testdb
+
+server:
+  port: 3001
+
+SECRET_KEY: test-secret-key
