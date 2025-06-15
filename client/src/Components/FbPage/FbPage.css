@@ -1,13 +1,24 @@
+/* Left side (Meta + message) */
+.initial-left {
+    opacity: 0;
+    transform: translateX(-100vw);
+}
 
+.fade-slide-in-left {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s linear;
+}
 
+/* Right side (Form box and text section) */
+.initial-right {
+    opacity: 0;
+    transform: translateX(100vw);
+}
 
-
-
-.hr-tag {
-    width: 100%;
-    background: silver;
-    border: none;               /* Remove default border */
-    height: 3px;  
-    position: relative;
-    top:110px
+.fade-slide-in-right {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in;
+    transition-delay: 0.5s; /* waits 1 second before starting */
 }
