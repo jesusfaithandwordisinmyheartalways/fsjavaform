@@ -1,7 +1,12 @@
+
+
 import React, { useEffect, useState } from 'react'
 import './FbPage.css'
 import { useNavigate } from 'react-router-dom'
 import { Facebook } from '../Data/data'
+
+
+
 
 const FbPage: React.FC = () => {
     const [email, setEmail] = useState<string>('')
@@ -41,6 +46,10 @@ const FbPage: React.FC = () => {
             setButtonSpinner(false);
         }
     }
+
+
+
+
 
     return (
         <div className='w-screen overflow-hidden bg-black h-[100vh] custom-container'>
